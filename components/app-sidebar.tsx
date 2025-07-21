@@ -49,51 +49,51 @@ const mainVoucherItems = [
   },
 ]
 
-const adminVoucherItems = [
-  {
-    title: "Admin Cash Vouchers",
-    url: "/admin/cashvoucher",
-    icon: Receipt, // Using Receipt for cash admin
-  },
-  {
-    title: "Admin Cheque Vouchers",
-    url: "/admin/cheque",
-    icon: CreditCard, // Using CreditCard for cheque admin
-  },
-]
+// const adminVoucherItems = [
+//   {
+//     title: "Admin Cash Vouchers",
+//     url: "/admin/cashvoucher",
+//     icon: Receipt, // Using Receipt for cash admin
+//   },
+//   {
+//     title: "Admin Cheque Vouchers",
+//     url: "/admin/cheque",
+//     icon: CreditCard, // Using CreditCard for cheque admin
+//   },
+// ]
 
-const accountingModuleItems = [
-  {
-    title: "Bank",
-    url: "/admin/bank",
-    icon: Banknote,
-  },
-  {
-    title: "Chart of Accounts",
-    url: "/admin/chartofaccounts",
-    icon: Scale,
-  },
-  {
-    title: "Journal Entry",
-    url: "/admin/journalentry",
-    icon: BookText,
-  },
-  {
-    title: "Trial Balance",
-    url: "/admin/trialbalance",
-    icon: ClipboardList,
-  },
-  {
-    title: "Income Statement",
-    url: "/admin/incomestatement",
-    icon: TrendingUp,
-  },
-  {
-    title: "Balance Sheet",
-    url: "/admin/balancesheet",
-    icon: Wallet,
-  },
-]
+// const accountingModuleItems = [
+//   {
+//     title: "Bank",
+//     url: "/admin/bank",
+//     icon: Banknote,
+//   },
+//   {
+//     title: "Chart of Accounts",
+//     url: "/admin/chartofaccounts",
+//     icon: Scale,
+//   },
+//   {
+//     title: "Journal Entry",
+//     url: "/admin/journalentry",
+//     icon: BookText,
+//   },
+//   {
+//     title: "Trial Balance",
+//     url: "/admin/trialbalance",
+//     icon: ClipboardList,
+//   },
+//   {
+//     title: "Income Statement",
+//     url: "/admin/incomestatement",
+//     icon: TrendingUp,
+//   },
+//   {
+//     title: "Balance Sheet",
+//     url: "/admin/balancesheet",
+//     icon: Wallet,
+//   },
+// ]
 
 const systemItems = [
   {
@@ -144,7 +144,7 @@ export function AppSidebar() {
         </SidebarGroup>
         <SidebarSeparator /> {/* Separator */}
         {/* Admin Voucher Section */}
-        <SidebarGroup>
+        {/* <SidebarGroup>
           <SidebarGroupLabel>Admin Views</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -160,27 +160,8 @@ export function AppSidebar() {
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
-        </SidebarGroup>
-        <SidebarSeparator /> {/* Separator */}
-        {/* Accounting Modules Section */}
-        <SidebarGroup>
-          <SidebarGroupLabel>Accounting Modules</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {accountingModuleItems.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild isActive={pathname === item.url}>
-                    <Link href={item.url}>
-                      <item.icon />
-                      <span>{item.title}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-        <SidebarSeparator /> {/* Separator */}
+        </SidebarGroup> */}
+        
         {/* System Section */}
         <SidebarGroup>
           <SidebarGroupLabel>System</SidebarGroupLabel>
